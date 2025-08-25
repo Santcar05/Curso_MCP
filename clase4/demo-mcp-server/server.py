@@ -34,6 +34,21 @@ def get_greeting(name: str) -> str:
 def get_goodbye(name: str) -> str:
     return f"Goodbye {name}"
 
+#Prompt de introduccion
+@mcp.prompt()
+def prompt() -> str:
+    return input(">>> ")
+
+
+
 
 ##PARA EJECUTAR UTILIZAR EL SIGUIENTE COMANDO
 # npx.cmd @modelcontextprotocol/inspector mcp run server.py
+
+#INstalar uv pip install uv
+
+#Inicializar proyecto
+#uv init demo-mcp-server 
+       
+# si se utiliza uv utilizar el siguiente comando
+#uv add "mcp[cli]"
